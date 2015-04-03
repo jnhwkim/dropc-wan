@@ -1,0 +1,37 @@
+Regularization of Neural Networks using DropConnect
+  http://cs.nyu.edu/~wanli/dropc/dropc.pdf
+
+
+Requires:
+CUDA >= 4.0
+CMake
+
+libs/ 
+based on Alex Krizhevsky code:
+https://code.google.com/p/cuda-convnet/
+
+doc/
+memory map
+
+Testing code:
+test_dropc.cu
+test_dropc_bit.cu
+
+Encode Connection information in bits implementation
+(optimal implementation)
+Device:
+dropc_bit_dev.hpp
+dropc_bit_dev.cu
+
+Host:
+dropc_bit_host.hpp
+dropc_bit_host.cpp
+
+Other non-optimal implementation
+Device:
+dropc_dev.hpp
+dropc_dev.cu
+
+Host:
+dropc_host.hpp
+dropc_host.cpp
